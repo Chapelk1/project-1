@@ -1,0 +1,60 @@
+:root {
+  --color-black: #141414;
+  --color-dark-green: #1e2827;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+.container {
+    width: 335px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1280px) {
+        width: 1176px;
+    }
+}
+// header-----------------------------
+.header {
+    background-color: var(--color-dark-green);
+}
+.btn-menu {
+    background-color: var(--color-dark-green);
+    border: none;
+    padding: 0;
+    display: inline-block;
+}
+.menu-icon {
+    width: 24px;
+    height: 24px;
+}

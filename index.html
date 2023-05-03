@@ -18,20 +18,81 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!------------------- header---------------------->
     <header class="header">
       <div class="container">
         <a class="link-logo link" href="/">
           <span class="text-logo">thewatchspot</span>
         </a>
         <button class="btn-menu">
-            <svg class="menu-icon">
-                <use href="/img/icons.svg#icon-menu"></use>
-            </svg>
+          <svg class="menu-icon">
+            <use href="/img/icons.svg#icon-menu"></use>
+          </svg>
         </button>
       </div>
     </header>
+    <!------------------- hero---------------------->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title"></h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-buttons">
+          <div class="button-prev btn-slide">
+            <svg class="icon-slide">
+              <use href="./img/icons.svg#icon-left"></use>
+            </svg>
+          </div>
+          <div class="button-next btn-slide">
+            <svg class="icon-slide">
+              <use href="./img/icons.svg#icon-right"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------- header---------------------->
+    <!------------------- header---------------------->
+    <!------------------- header---------------------->
+    <!------------------- header---------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

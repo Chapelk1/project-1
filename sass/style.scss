@@ -1,6 +1,7 @@
 :root {
   --color-black: #141414;
   --color-dark-green: #1e2827;
+  --color-white: #ffffff;
 }
 html {
   box-sizing: border-box;
@@ -46,15 +47,58 @@ img {
 }
 // header-----------------------------
 .header {
-    background-color: var(--color-dark-green);
+    background-color: var(--color-black);
+    padding: 29px 20px 0 20px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-logo {
+font-size: 12px;
+line-height: 1;
+letter-spacing: -0.03em;
+color: var(--color-white);
+
 }
 .btn-menu {
-    background-color: var(--color-dark-green);
+    background-color: var(--color-black);
     border: none;
     padding: 0;
-    display: inline-block;
-}
-.menu-icon {
     width: 24px;
     height: 24px;
+}
+.menu-icon {
+  fill: #ffffff;
+    width: 24px;
+    height: 24px;
+}
+// hero -----------------------------
+.hero {
+  background-color: var(--color-black);
+  padding-top: 69px;
+  padding-bottom: 40px;
+}
+
+.swiper {
+  width: 266px;
+  margin-left: 0;
+}
+.btn-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+.btn-slide:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.icon-slide {
+  width: 18px;
+  height: 18px;
 }

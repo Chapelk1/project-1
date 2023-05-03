@@ -1,6 +1,7 @@
 :root {
   --color-black: #141414;
   --color-dark-green: #1e2827;
+  --color-white: #ffffff;
 }
 
 html {
@@ -57,17 +58,76 @@ img {
 }
 
 .header {
-  background-color: var(--color-dark-green);
+  background-color: var(--color-black);
+  padding: 29px 20px 0 20px;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-logo {
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-white);
 }
 
 .btn-menu {
-  background-color: var(--color-dark-green);
+  background-color: var(--color-black);
   border: none;
   padding: 0;
-  display: inline-block;
+  width: 24px;
+  height: 24px;
 }
 
 .menu-icon {
+  fill: #ffffff;
   width: 24px;
   height: 24px;
+}
+
+.hero {
+  background-color: var(--color-black);
+  padding-top: 69px;
+  padding-bottom: 40px;
+}
+
+.swiper {
+  width: 266px;
+  margin-left: 0;
+}
+
+.btn-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+.btn-slide:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.icon-slide {
+  width: 18px;
+  height: 18px;
 }

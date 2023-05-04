@@ -38,9 +38,14 @@ img {
     text-decoration: none;
 }
 .container {
-    width: 335px;
     margin: 0 auto;
 
+    @media screen and (min-width: 335px) {
+        width: 335px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 724px;
+    }
     @media screen and (min-width: 1280px) {
         width: 1176px;
     }
@@ -80,10 +85,81 @@ color: var(--color-white);
   padding-top: 69px;
   padding-bottom: 40px;
 }
+.hero .container {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
 
-.swiper {
+  }
+}
+.hero-title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--color-white);
+
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+       font-size: 60px;
+       line-height: 1.03;
+    }
+  @media screen and (min-width: 1280px) {
+    width: 750px;
+    margin-bottom: 0;
+  }
+}
+.wrap-sliders {
+  margin-bottom: 40px;
   width: 266px;
+   @media screen and (min-width: 768px) {
+    width: 436px;
+    }
+    @media screen and (min-width: 1280px) {
+       order: 2;
+       margin-top: auto;
+       margin-right: 64px;
+       margin-bottom: 0;
+    }
+}
+.swiper {
   margin-left: 0;
+  margin-bottom: 20px;
+   width: 266px;
+  height: 200px;
+  @media screen and (min-width: 768px) {
+    width: 436px;
+    height: 255px;
+    }
+}
+.swiper-slide {
+  width: 266px;
+  height: 200px;
+  @media screen and (min-width: 768px) {
+    width: 436px;
+    height: 255px;
+    }
+}
+.swiper-slide img {
+  object-fit: cover;
+  height: 100%;
+}
+.bottom-slider {
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-between;
+}
+.swiper-buttons {
+  display: flex;
+}
+.button-prev {
+  margin-right: 12px;
 }
 .btn-slide {
   display: flex;
@@ -94,11 +170,71 @@ color: var(--color-white);
   background-color: #141414;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
+  @media screen and (min-width:768px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 .btn-slide:hover {
   border: 1px solid rgba(255, 255, 255, 1);
 }
+.btn-slide:hover .icon-slide {
+  stroke: var(--color-white);
+}
 .icon-slide {
   width: 18px;
   height: 18px;
+  stroke: rgba(255, 255, 255, 0.5);
+  @media screen and (min-width:768px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+.number-slides {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+.hero-descr {
+  width: 248px;
+  
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+
+  margin-bottom: 40px;
+  margin-left: auto;
+  @media screen and (min-width:1280px) {
+    order: 1;
+    width: 282px;
+    margin-bottom: 77px;
+  }
+}
+.hero-img {
+  background-image: url(../img/Rectangle1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../img/Rectangle1@2x.jpg);
+}
+  @media screen and (min-width:375px) {
+    width: 335px;
+    height: 410px;
+  }
+  @media screen and (min-width:768px) {
+    width: 704px;
+    height: 410px;
+  }
+  @media screen and (min-width:1280px) {
+    order: 2;
+    width:676px;
+    height:394px;
+  }
 }

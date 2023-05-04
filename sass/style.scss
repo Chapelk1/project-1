@@ -84,6 +84,13 @@ color: var(--color-white);
   background-color: var(--color-black);
   padding-top: 69px;
   padding-bottom: 40px;
+   @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 80px;
+  }
 }
 .hero .container {
   @media screen and (min-width: 768px) and (max-width: 1279px) {
